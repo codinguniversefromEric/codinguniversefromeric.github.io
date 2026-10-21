@@ -1,10 +1,78 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="zh-Hant">
 <head>
-    <title>codinguniversefromeric</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eric Wei · codinguniverse</title>
+<meta name="description" content="一個人做 app 的獨立開發者。讓僵硬的東西流動起來。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&family=Noto+Sans+TC:wght@400;500&family=JetBrains+Mono&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f3ec;--ink:#1d1c1a;--sub:#6b675e;--mute:#a39e93;--line:#d9d4c8;--accent:#3f7a52}
+@media (prefers-color-scheme:dark){:root{--bg:#161614;--ink:#ece8de;--sub:#a29d92;--mute:#6f6b63;--line:#2e2d29;--accent:#8fc59f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.75 "Noto Sans TC",system-ui,sans-serif}
+.wrap{max-width:760px;margin:0 auto;padding:32px 24px 64px}
+.mono{font-family:"JetBrains Mono",monospace;font-size:13px}
+.serif{font-family:"Noto Serif TC",serif;font-weight:500}
+nav{display:flex;justify-content:space-between;color:var(--sub);margin-bottom:18vh}
+nav a{color:var(--sub);text-decoration:none;margin-left:16px}
+nav a:hover{color:var(--ink)}
+h1{font-size:clamp(34px,6vw,52px);line-height:1.25;margin:8px 0 20px}
+.lede{color:var(--sub);max-width:480px;margin:0 0 14vh}
+.label{color:var(--mute);margin:0 0 10px}
+ol{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+li a{display:grid;grid-template-columns:44px 1fr auto;gap:16px;padding:22px 0;border-bottom:1px solid var(--line);color:inherit;text-decoration:none;transition:padding .25s}
+li a:hover{padding-left:8px}
+li a:hover .t{color:var(--accent)}
+.n{color:var(--mute);padding-top:4px}
+.t{font-size:22px;transition:color .25s}
+.d{display:block;color:var(--sub);font-size:15px}
+.tag{color:var(--sub);padding-top:6px;text-align:right}
+footer{margin-top:12vh;color:var(--mute);display:flex;justify-content:space-between}
+footer a{color:var(--mute)}
+@media (max-width:560px){li a{grid-template-columns:32px 1fr}.tag{grid-column:2;text-align:left;padding:0}}
+</style>
 </head>
 <body>
-    <h1>Welcome to my page</h1>
-    <p>app-ads.txt is active.</p>
+<div class="wrap">
+  <nav class="mono">
+    <span>codinguniverse/eric</span>
+    <span><a href="#projects">Projects</a><a href="https://github.com/codinguniversefromEric">GitHub</a><a href="https://www.threads.com/@ericisherehey">Threads</a></span>
+  </nav>
+
+  <p class="mono label">solo dev · Taiwan</p>
+  <h1 class="serif">我在讓僵硬的東西<br>流動起來。</h1>
+  <p class="lede">把卡死在版面裡的 PDF 還原成能自由閱讀的文字，把一片稻田放進手機裡隨天氣變化。一個人做 app，慢慢做。</p>
+
+  <p class="mono label" id="projects">目錄</p>
+  <ol>
+    <li><a href="https://codinguniversefromeric.github.io/Make_it_Flow_IOS/">
+      <span class="mono n">01</span>
+      <span><span class="serif t">Make it Flow</span><span class="d">完全離線的 iOS PDF → EPUB，用 CoreML 辨識版面結構</span></span>
+      <span class="mono tag">Swift · iOS</span></a></li>
+    <li><a href="https://github.com/codinguniversefromEric/Every-grain">
+      <span class="mono n">02</span>
+      <span><span class="serif t">粒粒皆辛苦</span><span class="d">一年一田，跟著真實天氣與節氣生長的稻田。沒有廣告，沒有體力值</span></span>
+      <span class="mono tag">Flutter</span></a></li>
+    <li><a href="https://github.com/codinguniversefromEric/semantic-reconstruction-engine">
+      <span class="mono n">03</span>
+      <span><span class="serif t">Semantic Reconstruction Engine</span><span class="d">解析欄位、註腳與表格，把 PDF 重建成 EPUB 的 Python 工具</span></span>
+      <span class="mono tag">Python</span></a></li>
+    <li><a href="https://github.com/codinguniversefromEric/roadster">
+      <span class="mono n">04</span>
+      <span><span class="serif t">Roadster</span><span class="d">用 three.js 做的 3D 車輛物理教學</span></span>
+      <span class="mono tag">three.js</span></a></li>
+    <li><a href="https://github.com/codinguniversefromEric/BlobLoading_remake">
+      <span class="mono n">05</span>
+      <span><span class="serif t">Blob loading</span><span class="d">重現一段流體感的載入動畫</span></span>
+      <span class="mono tag">SwiftUI</span></a></li>
+  </ol>
+
+  <footer class="mono">
+    <span>© 2026 Eric Wei</span>
+    <a href="https://github.com/codinguniversefromEric">github.com/codinguniversefromEric</a>
+  </footer>
+</div>
 </body>
 </html>
